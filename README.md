@@ -54,6 +54,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 | shortcut | FullForm |
 | --- | --- |
-|ul.nav.navbar-nav | <ul class="nav navbar-nav"></ul> |
+|ul.nav.navbar-nav | `<ul class="nav navbar-nav"></ul> `|
 
 
