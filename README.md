@@ -48,3 +48,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  5805  ng g c shopping-list/shopping-edit --spec false
 
 ```
+
+
+## emmet shortcuts
+```
+| shortcut | FullForm |
+| --- | --- |
+|ul.nav.navbar-nav | <ul class="nav navbar-nav"></ul> |
+
+```
