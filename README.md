@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Commands Used
+```
+ 5701  npm install --save-dev @angular-devkit/build-angular
+ 5704  npm uninstall @angular-devkit/build-angular
+ 5705  npm install @angular-devkit/build-angular
+ 5720  npm uninstall @typescript
+ 5777  npm install --save-dev @angular-devkit/build-angular
+ 5780  npm uninstall bootstrap --save
+ 5781  npm install bootstrap@3.3.7 --save
+ 5786  npm uninstall http --save
+ 5787  npm install @angular/http@latest
+
+```
