@@ -38,5 +38,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  5781  npm install bootstrap@3.3.7 --save
  5786  npm uninstall http --save
  5787  npm install @angular/http@latest
+ 
+ 
+ 5792  ng g c recipes --spec false
+ 5793  ng g c recipes/recipe-list --spec false
+ 5794  ng g c recipes/recipe-detail --spec false
+ 5795  ng g c recipes/recipe-list/recipe-item --spec false
+ 5804  ng g c shopping-list --spec false
+ 5805  ng g c shopping-list/shopping-edit --spec false
 
 ```
