@@ -66,3 +66,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ||``|
 
 
+## Important Version of modules
+Bootstrap 3.4.1
+Angular 8
+
+
