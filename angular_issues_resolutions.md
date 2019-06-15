@@ -18,7 +18,7 @@ and the Bootstrap CSS to the apps[0].styles array:
 - Restarted ng serve
 But the bootstrap styles are not loading
 
-Solution:
+<b>Solution:</b>
 
 I checked all the options and tried each suggested here in the post. But only working option is by uninstalling 4.* version by ``` npm uninstall bootstrap --save ``` and next by installing bootstrap 3.3.7 ```npm install bootstrap@3.3.7 --save ```
 
