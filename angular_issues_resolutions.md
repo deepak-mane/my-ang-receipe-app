@@ -62,6 +62,63 @@ or,
 yarn add @angular-devkit/build-angular --dev
 ```
 
+## 5. [angular-cli] Collapse not working in ng-bootstrap and angular4 app for navbar breadcrumb button
+
+Solution: Just using ng-bootstrap solves your issue.
+
+Html file:
+```
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarTogglerDemo02">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+```
+Component ts file:
+```
+export class AppComponent {
+  isCollapsed = false;
+}
+```
+add bootstrap css file in angular-cli.json:
+```
+"styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+      ],
+```
+Add this in main module:
+```
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+imports: [
+  NgbModule.forRoot()
+]
+```
+This will work like a charm.
+
+The main advantage of using ng-bootstrap is you can eliminate the dependencies of other js libraries like jquery and popper and you can also write your components for bootstrap.
+
+
 # Important Angular Commands
 
 ## To really update just one package install NCU and then run it just for that package. This will bump to the real latest.
