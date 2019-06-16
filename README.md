@@ -61,8 +61,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 |.collapse.navbar-collapse|`<div class="collapse navbar-collapse"></div>`|
 |ul.nav.navbar-nav | `<ul class="nav navbar-nav"></ul> `|
 |button.btn.btn-success|`<button class="btn btn-success"></button>`|
-||``|
-||``|
+|img.src|`<img src="" alt="" class="src">`|
+|span.pull-right|`<span class="pull-right"></span>`|
 ||``|
 
 
