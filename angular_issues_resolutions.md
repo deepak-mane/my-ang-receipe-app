@@ -118,6 +118,14 @@ This will work like a charm.
 
 The main advantage of using ng-bootstrap is you can eliminate the dependencies of other js libraries like jquery and popper and you can also write your components for bootstrap.
 
+## [angular-cli] ERROR in The Angular Compiler requires TypeScript >=3.4.0 and <3.5.0 but 3.5.2 was found instead
+<b>Solution:</b>
+To fix this install the specific typescript version 3.4.1
+```
+npm uninstall typescript --save-dev
+npm i typescript@3.4.1 --save-dev --save-exact
+```
+
 
 # Important Angular Commands
 
