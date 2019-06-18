@@ -124,6 +124,11 @@ To fix this install the specific typescript version 3.4.1
 ```
 npm uninstall typescript --save-dev
 npm i typescript@3.4.1 --save-dev --save-exact
+
+To fix Bootstrap Vulnerabilites issue:
+npm uninstall bootstrap
+npm install bootstrap@3.4.1 --save
+
 ```
 
 
