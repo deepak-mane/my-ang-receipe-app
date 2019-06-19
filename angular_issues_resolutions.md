@@ -131,11 +131,7 @@ npm install bootstrap@3.4.1 --save
 
 ```
 ## 7.[angular-cli] Uncaught Error: Bootstrap's JavaScript requires jQuery
-<b>Solution:</b> First, install jQuery using npm as follows
-```
-npm install jquery --save
-
-```
+<b>Solution:</b> First, install jQuery using npm as follows ```npm install jquery --save```
 Second, go to the ./angular-cli.json file at the root of your Angular CLI project folder, and find the scripts: [] property, and include the path to jQuery as follows
 ```
 "scripts": [ "../node_modules/jquery/dist/jquery.min.js" ]
