@@ -2,7 +2,11 @@
 
 ## 1. [angular-cli] Bootstrap styles not loading 
  Problem: I followed the steps for Global Library Installation https://github.com/angular/angular-cli#global-library-installation
-- Installed bootstrap@3.4.1 ``` npm install bootstrap@3.4.1 --save ```
+- Installed bootstrap@3.4.1 
+``` 
+npm uninstall bootstrap
+npm install bootstrap@3.4.1 --save 
+```
 - Then added the needed script files to to apps[0].scripts in angular-cli.json file:
 ```
  "scripts": [
