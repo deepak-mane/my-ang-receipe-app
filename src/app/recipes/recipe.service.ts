@@ -1,8 +1,8 @@
-import { EventEmitter }  from '@angular/core';
+import { EventEmitter, Injectable }  from '@angular/core';
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../shared/ingredient.model';
-
-
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
+@Injectable()
 export class RecipeService {
     //New Property Added in Relation to 
     //recipe-list.component.ts
@@ -28,7 +28,14 @@ export class RecipeService {
             ])
     ];
 
+    constructor(private slService: ShoppingListService) {
+
+    }
     getRecipes() {
         return this.recipes.slice(); // Returns copy of array - A way to get Recipes
+    }
+
+    addIngredientsToShoppingList(ingredients: Ingredient[]) {
+        this.slService.addIngredients(ingredients);
     }
 }
