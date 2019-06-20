@@ -1,5 +1,15 @@
 # Angular App -- Issues and there Resolutions 
 
+### Default Run Commands:
+```
+npm install jquery --save
+npm uninstall bootstrap --save 
+npm install bootstrap@3.4.1 --save 
+npm install --save-dev @angular-devkit/build-angular
+npm uninstall typescript --save-dev
+npm i typescript@3.4.1 --save-dev --save-exact
+```
+
 ## 1. [angular-cli] Bootstrap styles not loading 
  Problem: I followed the steps for Global Library Installation https://github.com/angular/angular-cli#global-library-installation
 - Installed bootstrap@3.4.1 
@@ -25,7 +35,11 @@ But the bootstrap styles are not loading
 <b>Solution:</b>
 <font face="verdana" color="green">This is some text!</font>
 
-I checked all the options and tried each suggested here in the post. But only working option is by uninstalling 4.* version by ``` npm uninstall bootstrap --save ``` and next by installing bootstrap 3.3.7 ```npm install bootstrap@3.3.7 --save ```
+I checked all the options and tried each suggested here in the post. But only working option is by uninstalling 4.* version and next by installing bootstrap 3.3.7  
+``` 
+npm uninstall bootstrap --save 
+npm install bootstrap@3.4.1 --save 
+```
 
 After installing the bootstrap dependency into your project just plug in the below code in your angular.json file.
 ```
@@ -135,7 +149,10 @@ npm install bootstrap@3.4.1 --save
 
 ```
 ## 7.[angular-cli] Uncaught Error: Bootstrap's JavaScript requires jQuery
-<b>Solution:</b> First, install jQuery using npm as follows ```npm install jquery --save```
+<b>Solution:</b> First, install jQuery using npm as follows
+```
+npm install jquery --save
+```
 Second, go to the ./angular-cli.json file at the root of your Angular CLI project folder, and find the scripts: [] property, and include the path to jQuery as follows
 ```
 "scripts": [ "../node_modules/jquery/dist/jquery.min.js" ]
