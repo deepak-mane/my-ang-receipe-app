@@ -2,6 +2,7 @@
 
 ### Default Run Commands:
 ```
+npm install @angular/http@latest
 npm install jquery --save
 npm uninstall bootstrap --save 
 npm install bootstrap@3.4.1 --save 
