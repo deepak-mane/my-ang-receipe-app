@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+// Before Implementing the AppRouting, we used EventEmitters
+// import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -6,10 +8,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
     templateUrl: './header.component.html'
 })
 export class HeaderComponent {
-    @Output() featureSelected = new EventEmitter<string>();
+    // Before Implementing the AppRouting, we used EventEmitters
+    // @Output() featureSelected = new EventEmitter<string>();
     
-     
-    onSelect(feature: string) {
-        this.featureSelected.emit(feature);
-    }
+    // onSelect(feature: string) {
+    //     this.featureSelected.emit(feature);
+    // }
 }
