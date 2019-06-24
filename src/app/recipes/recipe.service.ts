@@ -1,4 +1,7 @@
-import { EventEmitter, Injectable }  from '@angular/core';
+// import { EventEmitter, Injectable }  from '@angular/core';
+import { Injectable }  from '@angular/core';
+// import { Subject } from 'rxjs';
+
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
@@ -6,8 +9,9 @@ import { ShoppingListService } from '../shopping-list/shopping-list.service';
 export class RecipeService {
     //New Property Added in Relation to 
     //recipe-list.component.ts
-    recipeSelected = new EventEmitter<Recipe>();
-
+    //  GotRid as replacing event with subject
+    // recipeSelected = new EventEmitter<Recipe>();
+    // recipeSelected = new Subject<Recipe>();
 
     private recipes: Recipe[] = [
         new Recipe(
