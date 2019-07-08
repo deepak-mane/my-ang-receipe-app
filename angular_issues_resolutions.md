@@ -11,6 +11,16 @@ npm uninstall typescript --save-dev
 npm i typescript@3.4.1 --save-dev --save-exact
 ```
 
+```
+sudo npm install @angular/http@latest
+sudo npm install jquery --save
+sudo npm uninstall bootstrap --save 
+sudo npm install bootstrap@3.4.1 --save 
+sudo npm install --save-dev @angular-devkit/build-angular
+sudo npm uninstall typescript --save-dev
+sudo npm i typescript@3.4.1 --save-dev --save-exact
+```
+
 ## 1. [angular-cli] Bootstrap styles not loading 
  Problem: I followed the steps for Global Library Installation https://github.com/angular/angular-cli#global-library-installation
 - Installed bootstrap@3.4.1 
@@ -158,8 +168,12 @@ Second, go to the ./angular-cli.json file at the root of your Angular CLI projec
 ```
 "scripts": [ "../node_modules/jquery/dist/jquery.min.js" ]
 ```
-
-# Important Angular Commands
+## 8.[angular-cli] Angular @ViewChild() error: Expected 2 arguments, but got 1
+<b.Solution:</b>
+In Angular 8 , ViewChild takes 2 parameters
+```
+ @ViewChild(ChildDirective, {static: false}) Component# Important Angular Commands
+```
 
 ## To really update just one package install NCU and then run it just for that package. This will bump to the real latest.
 ```
@@ -170,4 +184,5 @@ ncu -f your-intended-package-name -u
 
 ## Is it possible to fetch data from Oracle DB in AngularJS? (I only have the DB connection, so by this can I get data from DB using AngularJS)
 Angular is a client side framework, it runs on the browser. You can not make a connection to a database using Angular. You need to have a REST layer either in any of the server side programming languages such as Java, C#, NodeJS which can connect to your oracle database and return data to client/angular whenever they call the REST APIs.
+
 
